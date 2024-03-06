@@ -14,9 +14,9 @@ class exer6 {
         float desc = ler.nextFloat();
         DecimalFormat df = new DecimalFormat("#.0");
 
-        float desconto = (valor*desc)/100;
+        float calc = (valor*desc)/100;
+        float desconto = valor - calc;
 
         System.out.printf("Com o desconto aplicado o(a) %s passa a custar: \n %s\n",nome, df.format(desconto));
-
     }
 }
